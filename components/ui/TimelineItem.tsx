@@ -6,9 +6,15 @@ type Props = {
 };
 
 export default function TimelineItem({ experience }: Props) {
+  const typeClasses = {
+    Internship: "border-blue-400/30 bg-blue-500/10 text-blue-200",
+    Organization: "border-emerald-400/30 bg-emerald-500/10 text-emerald-200",
+    Work: "border-amber-400/30 bg-amber-500/10 text-amber-200",
+  }[experience.type];
+
   return (
     <div className="relative pl-8 md:pl-12">
-      <div className="absolute left-3 top-0 h-full w-px bg-gradient-to-b from-blue-400 via-slate-700 to-transparent" />
+      <div className="absolute left-3 top-0 h-full w-px bg-linear-to-b from-blue-400 via-slate-700 to-transparent" />
 
       <div className="absolute left-0 top-3 h-6 w-6 rounded-full border-4 border-slate-950 bg-blue-400 shadow-[0_0_0_6px_rgba(59,130,246,0.15)]" />
 
@@ -26,8 +32,10 @@ export default function TimelineItem({ experience }: Props) {
             <p className="text-sm text-slate-400">{experience.location}</p>
           </div>
 
-          <span className="inline-flex w-fit rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-slate-300">
-            Internship
+          <span
+            className={`inline-flex w-fit rounded-full border px-4 py-2 text-sm font-medium ${typeClasses}`}
+          >
+            {experience.type}
           </span>
         </div>
 

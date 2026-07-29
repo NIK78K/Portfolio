@@ -1,4 +1,6 @@
 export interface Experience {
+    type: "Internship" | "Organization" | "Work";
+    
   company: string;
   position: string;
   duration: string;
