@@ -8,41 +8,46 @@ type ProjectCardProps = {
 
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <div className="overflow-hidden rounded-2xl border border-slate-800 bg-slate-900 transition hover:-translate-y-2 hover:border-blue-500">
-      <div className="relative aspect-video bg-slate-800">
+    <article className="group overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-[0_20px_80px_rgba(2,6,23,0.25)] backdrop-blur-xl transition duration-300 hover:-translate-y-2 hover:border-blue-400/40 hover:bg-white/[0.07]">
+      <div className="relative aspect-[16/10] bg-slate-900/60">
         <Image
           src={project.image}
           alt={project.title}
           fill
-          className="object-cover"
+          sizes="(max-width: 768px) 100vw, 50vw"
+          className="object-cover transition duration-500 group-hover:scale-105"
         />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/5 to-transparent" />
       </div>
 
-      <div className="space-y-4 p-6">
-        <h3 className="text-2xl font-bold">{project.title}</h3>
+      <div className="space-y-5 p-6">
+        <div>
+          <h3 className="text-2xl font-bold">{project.title}</h3>
 
-        <p className="text-slate-400">
-          {project.description}
-        </p>
+          <p className="mt-3 leading-7 text-slate-400">
+            {project.description}
+          </p>
+        </div>
 
         <div className="flex flex-wrap gap-2">
           {project.tech.map((tech) => (
             <span
               key={tech}
-              className="rounded-full bg-blue-500/10 px-3 py-1 text-sm text-blue-300"
+              className="rounded-full border border-white/10 bg-slate-950/60 px-3 py-1 text-sm text-slate-200"
             >
               {tech}
             </span>
           ))}
         </div>
 
-        <div className="flex gap-6 pt-2">
+        <div className="flex flex-wrap gap-4 pt-2 text-sm font-medium">
           {project.github && (
             <a
               href={project.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 hover:text-blue-400"
+              className="inline-flex items-center gap-2 text-slate-200 transition hover:text-blue-300"
             >
               <FiGithub size={18} />
               GitHub
@@ -54,7 +59,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               href={project.demo}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 hover:text-blue-400"
+              className="inline-flex items-center gap-2 text-slate-200 transition hover:text-blue-300"
             >
               <FiExternalLink size={18} />
               Live Demo
@@ -62,6 +67,6 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           )}
         </div>
       </div>
-    </div>
+    </article>
   );
 }

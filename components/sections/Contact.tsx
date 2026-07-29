@@ -1,54 +1,108 @@
 import Container from "@/components/ui/Container";
+import FadeIn from "@/components/ui/FadeIn";
+import GlassCard from "@/components/ui/GlassCard";
 import SectionTitle from "@/components/ui/SectionTitle";
 import {
   FaGithub,
   FaLinkedin,
   FaEnvelope,
+  FaArrowRight,
 } from "react-icons/fa";
+import { profile } from "@/data/profile";
 
 export default function Contact() {
   return (
     <section id="contact">
       <Container>
-        <SectionTitle
-          title="Contact"
-          subtitle="Let's build something together."
-        />
+        <FadeIn>
+          <SectionTitle
+            eyebrow="Contact"
+            title="Let's Build Something"
+            subtitle="Open for collaboration, freelance work, and product-focused web projects."
+          />
+        </FadeIn>
 
-        <div className="rounded-2xl border border-slate-800 bg-slate-900 p-8">
-          <p className="mb-8 text-lg text-slate-300">
-            I'm always open to discussing new opportunities,
-            collaborations, or interesting projects.
-          </p>
+        <FadeIn>
+          <GlassCard>
+            <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+              <div>
+                <p className="text-lg leading-8 text-slate-300">
+                  Kalau kamu punya ide website, dashboard, atau aplikasi internal,
+                  saya terbuka untuk diskusi dan bantu menyusunnya jadi lebih rapi.
+                </p>
 
-          <div className="space-y-6">
-            <a
-              href="mailto:email@example.com"
-              className="flex items-center gap-4 hover:text-blue-400"
-            >
-              <FaEnvelope size={22} />
-              email@example.com
-            </a>
+                <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+                  <a
+                    href={`mailto:${profile.email}`}
+                    className="inline-flex items-center justify-center gap-2 rounded-full bg-blue-500 px-6 py-3 font-semibold text-white transition hover:bg-blue-400"
+                  >
+                    <FaEnvelope />
+                    Email Me
+                  </a>
 
-            <a
-              href="https://github.com/NIK78K"
-              target="_blank"
-              className="flex items-center gap-4 hover:text-blue-400"
-            >
-              <FaGithub size={22} />
-              github.com/NIK78K
-            </a>
+                  <a
+                    href="#projects"
+                    className="inline-flex items-center justify-center gap-2 rounded-full border border-white/10 px-6 py-3 font-semibold text-slate-100 transition hover:border-blue-400 hover:bg-white/5"
+                  >
+                    View Work
+                    <FaArrowRight size={14} />
+                  </a>
+                </div>
+              </div>
 
-            <a
-              href="https://linkedin.com/in/username"
-              target="_blank"
-              className="flex items-center gap-4 hover:text-blue-400"
-            >
-              <FaLinkedin size={22} />
-              LinkedIn
-            </a>
-          </div>
-        </div>
+              <div className="space-y-4">
+                <a
+                  href={`mailto:${profile.email}`}
+                  className="flex items-center justify-between rounded-2xl border border-white/10 bg-slate-950/60 px-5 py-4 transition hover:border-blue-400/50 hover:bg-white/5"
+                >
+                  <div className="flex items-center gap-4">
+                    <span className="flex h-11 w-11 items-center justify-center rounded-full bg-blue-500/10 text-blue-300">
+                      <FaEnvelope />
+                    </span>
+                    <div>
+                      <p className="font-medium text-white">Email</p>
+                      <p className="text-sm text-slate-400">{profile.email}</p>
+                    </div>
+                  </div>
+                </a>
+
+                <a
+                  href={profile.github}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center justify-between rounded-2xl border border-white/10 bg-slate-950/60 px-5 py-4 transition hover:border-blue-400/50 hover:bg-white/5"
+                >
+                  <div className="flex items-center gap-4">
+                    <span className="flex h-11 w-11 items-center justify-center rounded-full bg-blue-500/10 text-blue-300">
+                      <FaGithub />
+                    </span>
+                    <div>
+                      <p className="font-medium text-white">GitHub</p>
+                      <p className="text-sm text-slate-400">@NIK78K</p>
+                    </div>
+                  </div>
+                </a>
+
+                <a
+                  href={profile.linkedin}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center justify-between rounded-2xl border border-white/10 bg-slate-950/60 px-5 py-4 transition hover:border-blue-400/50 hover:bg-white/5"
+                >
+                  <div className="flex items-center gap-4">
+                    <span className="flex h-11 w-11 items-center justify-center rounded-full bg-blue-500/10 text-blue-300">
+                      <FaLinkedin />
+                    </span>
+                    <div>
+                      <p className="font-medium text-white">LinkedIn</p>
+                      <p className="text-sm text-slate-400">Professional profile</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </GlassCard>
+        </FadeIn>
       </Container>
     </section>
   );

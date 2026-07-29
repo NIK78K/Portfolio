@@ -1,4 +1,5 @@
 import { Experience } from "@/components/types/experience";
+import GlassCard from "@/components/ui/GlassCard";
 
 type Props = {
   experience: Experience;
@@ -6,37 +7,36 @@ type Props = {
 
 export default function TimelineItem({ experience }: Props) {
   return (
-    <div className="relative pl-10">
-      {/* Garis */}
-      <div className="absolute left-3 top-0 h-full w-px bg-slate-700" />
+    <div className="relative pl-8 md:pl-12">
+      <div className="absolute left-3 top-0 h-full w-px bg-gradient-to-b from-blue-400 via-slate-700 to-transparent" />
 
-      {/* Titik */}
-      <div className="absolute left-0 top-2 h-6 w-6 rounded-full border-4 border-blue-500 bg-slate-950" />
+      <div className="absolute left-0 top-3 h-6 w-6 rounded-full border-4 border-slate-950 bg-blue-400 shadow-[0_0_0_6px_rgba(59,130,246,0.15)]" />
 
-      <div className="rounded-2xl border border-slate-800 bg-slate-900 p-6">
-        <div className="flex flex-col justify-between gap-2 md:flex-row">
+      <GlassCard>
+        <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
           <div>
-            <h3 className="text-2xl font-bold">
-              {experience.position}
-            </h3>
-
-            <p className="text-blue-400">
-              {experience.company}
+            <p className="text-sm uppercase tracking-[0.3em] text-blue-400">
+              {experience.duration}
             </p>
 
-            <p className="text-sm text-slate-400">
-              {experience.location}
-            </p>
+            <h3 className="mt-3 text-2xl font-bold">{experience.position}</h3>
+
+            <p className="mt-2 text-blue-300">{experience.company}</p>
+
+            <p className="text-sm text-slate-400">{experience.location}</p>
           </div>
 
-          <span className="text-slate-400">
-            {experience.duration}
+          <span className="inline-flex w-fit rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-slate-300">
+            Internship
           </span>
         </div>
 
-        <ul className="mt-6 list-disc space-y-2 pl-5 text-slate-300">
+        <ul className="mt-6 grid gap-3 text-slate-300">
           {experience.description.map((item) => (
-            <li key={item}>{item}</li>
+            <li key={item} className="flex gap-3">
+              <span className="mt-2 h-2 w-2 rounded-full bg-blue-400" />
+              <span>{item}</span>
+            </li>
           ))}
         </ul>
 
@@ -44,13 +44,13 @@ export default function TimelineItem({ experience }: Props) {
           {experience.technologies.map((tech) => (
             <span
               key={tech}
-              className="rounded-full bg-blue-500/10 px-3 py-1 text-sm text-blue-300"
+              className="rounded-full border border-white/10 bg-slate-950/60 px-3 py-1 text-sm text-slate-200"
             >
               {tech}
             </span>
           ))}
         </div>
-      </div>
+      </GlassCard>
     </div>
   );
 }
