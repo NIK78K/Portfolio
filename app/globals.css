@@ -12,6 +12,24 @@
   --text-secondary: #94a3b8;
 
   --border: #334155;
+
+  color-scheme: dark;
+}
+
+html[data-theme="light"] {
+  --background: #f8fafc;
+  --surface: #ffffff;
+  --card: #e2e8f0;
+
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+
+  --text: #0f172a;
+  --text-secondary: #475569;
+
+  --border: #cbd5e1;
+
+  color-scheme: light;
 }
 
 html {

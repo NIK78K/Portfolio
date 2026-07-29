@@ -59,7 +59,7 @@ export default function Hero() {
               <div className="absolute inset-0 rounded-full bg-blue-500/30 blur-3xl" />
 
               <Image
-                src="/images/profile.png"
+                src="/images/Photo.jpeg"
                 alt="Profile"
                 width={400}
                 height={400}
