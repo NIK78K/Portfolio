@@ -7,9 +7,7 @@ import ThemeToggle from "@/components/ui/ThemeTogle";
 const menus = [
   "About",
   "Experience",
-  "Projects",
-  "Certificate",
-  "Skills",
+  "Portfolio",
   "Contact",
 ];
 
