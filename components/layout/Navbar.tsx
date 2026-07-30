@@ -8,6 +8,7 @@ const menus = [
   "About",
   "Experience",
   "Projects",
+  "Certificate",
   "Skills",
   "Contact",
 ];
