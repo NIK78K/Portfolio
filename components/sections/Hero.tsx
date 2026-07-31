@@ -78,7 +78,7 @@ export default function Hero() {
 
           <div className="flex justify-center lg:justify-end">
             <div className="max-w-2xl mt-8">
-              <div className="absolute inset-0 rounded-[2rem] bg-gradient-to-br from-blue-500/30 via-cyan-400/10 to-transparent blur-3xl" />
+              <div className="pointer-events-none absolute inset-0 rounded-[2rem] bg-gradient-to-br from-blue-500/30 via-cyan-400/10 to-transparent blur-3xl" />
 
               <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 p-4 shadow-[0_24px_100px_rgba(2,6,23,0.35)] backdrop-blur-xl">
                 <Image
@@ -93,18 +93,18 @@ export default function Hero() {
 
                 <div className="mt-4 grid grid-cols-3 gap-3 text-center text-sm">
                   <div className="rounded-2xl border border-white/10 bg-slate-950/70 px-3 py-4">
-                    <p className="text-lg font-bold text-white">1+</p>
-                    <p className="text-slate-400">Internship</p>
+                    <p className="text-lg font-bold text-white">S1</p>
+                    <p className="text-slate-400">S.Kom</p>
+                  </div>
+
+                  <div className="rounded-2xl border border-white/10 bg-slate-950/70 px-3 py-4">
+                    <p className="text-lg font-bold text-white">3.74</p>
+                    <p className="text-slate-400">GPA</p>
                   </div>
 
                   <div className="rounded-2xl border border-white/10 bg-slate-950/70 px-3 py-4">
                     <p className="text-lg font-bold text-white">5+</p>
-                    <p className="text-slate-400">Projects</p>
-                  </div>
-
-                  <div className="rounded-2xl border border-white/10 bg-slate-950/70 px-3 py-4">
-                    <p className="text-lg font-bold text-white">4</p>
-                    <p className="text-slate-400">Stacks</p>
+                    <p className="text-slate-400">Project</p>
                   </div>
                 </div>
               </div>

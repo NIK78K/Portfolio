@@ -34,14 +34,14 @@ export default function About() {
                 <p className="text-sm uppercase tracking-[0.3em] text-blue-400">
                   Specialty
                 </p>
-                <p className="mt-3 text-xl font-semibold">Full stack web apps</p>
+                <p className="mt-3 text-xl font-semibold">System Analysis & Web Development</p>
               </GlassCard>
 
               <GlassCard>
                 <p className="text-sm uppercase tracking-[0.3em] text-blue-400">
                   Focus
                 </p>
-                <p className="mt-3 text-xl font-semibold">Laravel, React, Next.js</p>
+                <p className="mt-3 text-xl font-semibold">Business Process & Digital Solutions</p>
               </GlassCard>
             </div>
           </FadeIn>

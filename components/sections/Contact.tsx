@@ -27,8 +27,7 @@ export default function Contact() {
             <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
               <div>
                 <p className="text-lg leading-8 text-slate-300">
-                  Kalau kamu punya ide website, dashboard, atau aplikasi internal,
-                  saya terbuka untuk diskusi dan bantu menyusunnya jadi lebih rapi.
+                  I’m open to job opportunities, collaborations, and digital product development
                 </p>
 
                 <div className="mt-8 flex flex-col gap-4 sm:flex-row">
@@ -78,7 +77,7 @@ export default function Contact() {
                     </span>
                     <div>
                       <p className="font-medium text-white">GitHub</p>
-                      <p className="text-sm text-slate-400">@NIK78K</p>
+                      <p className="text-sm text-slate-400">NIK78K</p>
                     </div>
                   </div>
                 </a>
@@ -95,7 +94,7 @@ export default function Contact() {
                     </span>
                     <div>
                       <p className="font-medium text-white">LinkedIn</p>
-                      <p className="text-sm text-slate-400">Professional profile</p>
+                      <p className="text-sm text-slate-400">Alfath Damanik</p>
                     </div>
                   </div>
                 </a>
