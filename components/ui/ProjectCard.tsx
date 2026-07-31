@@ -9,7 +9,7 @@ type ProjectCardProps = {
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <article className="group overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-[0_20px_80px_rgba(2,6,23,0.25)] backdrop-blur-xl transition duration-300 hover:-translate-y-2 hover:border-blue-400/40 hover:bg-white/[0.07]">
-      <div className="relative aspect-[16/10] bg-slate-900/60">
+      <div className="relative aspect-[2/1] bg-slate-900/60">
         <Image
           src={project.image}
           alt={project.title}
@@ -21,11 +21,11 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/5 to-transparent" />
       </div>
 
-      <div className="space-y-5 p-6">
+      <div className="space-y-4 p-5">
         <div>
           <h3 className="text-2xl font-bold">{project.title}</h3>
 
-          <p className="mt-3 leading-7 text-slate-400">
+          <p className="mt-2 leading-6 text-slate-400">
             {project.description}
           </p>
         </div>

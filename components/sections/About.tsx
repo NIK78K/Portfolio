@@ -20,13 +20,9 @@ export default function About() {
           <FadeIn>
             <GlassCard>
               <div className="space-y-5 text-slate-300">
-                <p className="text-lg leading-8">
-                  {profile.subtitle}
-                </p>
-
-                <p className="leading-8 text-slate-400">
-                  Fokus saya ada pada antarmuka yang rapi, alur pengguna yang jelas,
-                  dan implementasi yang tetap ringan saat dipakai di perangkat nyata.
+                <p className="space-y-5 text-lg leading-8 text-slate-300">
+                  Hello! I'm Alfath Damanik, a Computer Science graduate passionate about System Analysis and Web Development. I enjoy analyzing business processes, identifying user needs, and designing technology-driven solutions that improve efficiency and user experience.
+                  My experience includes developing web applications, designing databases, documenting system requirements, and collaborating in software development projects. I believe that technology is not only about writing code but also about understanding problems and delivering meaningful solutions.
                 </p>
               </div>
             </GlassCard>

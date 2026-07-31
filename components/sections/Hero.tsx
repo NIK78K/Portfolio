@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import Container from "@/components/ui/Container";
 import { FaGithub, FaLinkedin, FaEnvelope, FaArrowRight } from "react-icons/fa";
 import { profile } from "@/data/profile";
@@ -12,7 +11,7 @@ export default function Hero() {
           <div className="max-w-2xl">
             <div className="inline-flex items-center gap-2 rounded-full border border-blue-400/20 bg-blue-400/10 px-4 py-2 text-sm text-blue-200">
               <span className="h-2 w-2 rounded-full bg-blue-400" />
-              Available for freelance and collaboration
+              Open to Work
             </div>
 
             <p className="mt-6 text-sm uppercase tracking-[0.35em] text-slate-400">
@@ -32,13 +31,13 @@ export default function Hero() {
             </p>
 
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-              <Link
+              <a
                 href="#portfolio"
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-blue-500 px-6 py-3 font-semibold text-white transition hover:bg-blue-400"
               >
                 View Portfolio
                 <FaArrowRight size={14} />
-              </Link>
+              </a>
 
               <a
                 href="/cv/Resume_Alfath Damanik.pdf"
@@ -78,18 +77,18 @@ export default function Hero() {
           </div>
 
           <div className="flex justify-center lg:justify-end">
-            <div className="relative w-full max-w-md">
+            <div className="max-w-2xl mt-8">
               <div className="absolute inset-0 rounded-[2rem] bg-gradient-to-br from-blue-500/30 via-cyan-400/10 to-transparent blur-3xl" />
 
               <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 p-4 shadow-[0_24px_100px_rgba(2,6,23,0.35)] backdrop-blur-xl">
                 <Image
                   src="/images/Photo.jpeg"
                   alt={profile.name}
-                  width={560}
-                  height={720}
+                  width={450}
+                  height={580}
                   priority
                   sizes="(max-width: 1024px) 100vw, 40vw"
-                  className="h-[520px] w-full rounded-[1.5rem] object-cover object-top"
+                  className="h-[430px] w-full rounded-[1.5rem] object-cover object-top"
                 />
 
                 <div className="mt-4 grid grid-cols-3 gap-3 text-center text-sm">

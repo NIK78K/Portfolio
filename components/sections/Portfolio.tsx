@@ -51,11 +51,10 @@ export default function Portfolio() {
                     key={tab.key}
                     type="button"
                     onClick={() => setActiveTab(tab.key)}
-                    className={`rounded-2xl px-5 py-4 text-left transition ${
-                      isActive
-                        ? "bg-blue-500/20 text-white ring-1 ring-blue-300/40"
-                        : "text-slate-300 hover:bg-white/5 hover:text-white"
-                    }`}
+                    className={`rounded-2xl px-5 py-4 text-left transition ${isActive
+                      ? "bg-blue-500/20 text-white ring-1 ring-blue-300/40"
+                      : "text-slate-300 hover:bg-white/5 hover:text-white"
+                      }`}
                     aria-pressed={isActive}
                   >
                     <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-400">
@@ -81,7 +80,7 @@ export default function Portfolio() {
         )}
 
         {activeTab === "certificates" && (
-          <div className="grid gap-6 md:grid-cols-2">
+          <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
             {certificates.map((certificate) => (
               <FadeIn key={certificate.title}>
                 <CertificateCard certificate={certificate} />

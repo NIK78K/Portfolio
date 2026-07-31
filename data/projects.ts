@@ -5,7 +5,7 @@ export const projects: Project[] = [
     title: "Kasir System",
     description:
       "Aplikasi kasir dan transaksi untuk operasional restoran yang cepat dan mudah dipakai.",
-    image: "/images/projects/restaurant.png",
+    image: "/certificates/anjay.jpg",
     tech: ["Laravel", "MySQL", "Tailwind CSS", "Alpine.js"],
     github: "https://github.com/NIK78K",
     demo: "",
@@ -14,7 +14,7 @@ export const projects: Project[] = [
     title: "Parking System",
     description:
       "Sistem parkir berbasis web untuk pencatatan kendaraan, slot parkir, dan transaksi.",
-    image: "/images/projects/restaurant.png",
+    image: "/images/rehe.jpg",
     tech: ["React.js", "Laravel", "MySQL"],
     github: "https://github.com/NIK78K",
     demo: "",
