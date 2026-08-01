@@ -8,8 +8,8 @@ type ProjectCardProps = {
 
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <article className="group overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-[0_20px_80px_rgba(2,6,23,0.25)] backdrop-blur-xl transition duration-300 hover:-translate-y-2 hover:border-blue-400/40 hover:bg-white/[0.07]">
-      <div className="relative aspect-[2/1] bg-slate-900/60">
+    <article className="group overflow-hidden rounded-3xl border border-(--border) bg-(--surface) shadow-(--shadow-card) backdrop-blur-xl transition duration-300 hover:-translate-y-2 hover:border-blue-400/40 hover:bg-(--surface-hover) hover:shadow-(--shadow-card-hover)">
+      <div className="relative aspect-2/1 bg-(--surface-strong)">
         <Image
           src={project.image}
           alt={project.title}
@@ -18,14 +18,14 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           className="object-cover transition duration-500 group-hover:scale-105"
         />
 
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/5 to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-t from-[rgba(7,17,31,0.9)] via-[rgba(7,17,31,0.05)] to-transparent" />
       </div>
 
       <div className="space-y-4 p-5">
         <div>
-          <h3 className="text-2xl font-bold">{project.title}</h3>
+          <h3 className="text-2xl font-bold text-(--text)">{project.title}</h3>
 
-          <p className="mt-2 leading-6 text-slate-400">
+          <p className="mt-2 leading-6 text-(--text-secondary)">
             {project.description}
           </p>
         </div>
@@ -34,7 +34,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           {project.tech.map((tech) => (
             <span
               key={tech}
-              className="rounded-full border border-white/10 bg-slate-950/60 px-3 py-1 text-sm text-slate-200"
+              className="rounded-full border border-(--border) bg-(--surface-soft) px-3 py-1 text-sm text-(--text)"
             >
               {tech}
             </span>
@@ -47,7 +47,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               href={project.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-slate-200 transition hover:text-blue-300"
+              className="inline-flex items-center gap-2 text-(--text) transition hover:text-blue-500"
             >
               <FiGithub size={18} />
               GitHub
@@ -59,7 +59,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               href={project.demo}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-slate-200 transition hover:text-blue-300"
+              className="inline-flex items-center gap-2 text-(--text) transition hover:text-blue-500"
             >
               <FiExternalLink size={18} />
               Live Demo

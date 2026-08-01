@@ -7,29 +7,29 @@ type Props = {
 
 export default function TimelineItem({ experience }: Props) {
   const typeClasses = {
-    Internship: "border-blue-400/30 bg-blue-500/10 text-blue-200",
-    Organization: "border-emerald-400/30 bg-emerald-500/10 text-emerald-200",
-    Work: "border-amber-400/30 bg-amber-500/10 text-amber-200",
+    Internship: "border-blue-400/30 bg-blue-500/10 text-blue-600",
+    Organization: "border-emerald-400/30 bg-emerald-500/10 text-emerald-600",
+    Work: "border-amber-400/30 bg-amber-500/10 text-amber-600",
   }[experience.type];
 
   return (
     <div className="relative pl-8 md:pl-12">
-      <div className="absolute left-3 top-0 h-full w-px bg-linear-to-b from-blue-400 via-slate-700 to-transparent" />
+      <div className="absolute left-3 top-0 h-full w-px bg-linear-to-b from-blue-400 via-(--border) to-transparent" />
 
-      <div className="absolute left-0 top-3 h-6 w-6 rounded-full border-4 border-slate-950 bg-blue-400 shadow-[0_0_0_6px_rgba(59,130,246,0.15)]" />
+      <div className="absolute left-0 top-3 h-6 w-6 rounded-full border-4 border-(--background) bg-blue-400 shadow-[0_0_0_6px_rgba(59,130,246,0.15)]" />
 
       <GlassCard>
         <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
           <div>
-            <p className="text-sm uppercase tracking-[0.3em] text-blue-400">
+            <p className="text-sm uppercase tracking-[0.3em] text-(--primary)">
               {experience.duration}
             </p>
 
-            <h3 className="mt-3 text-2xl font-bold">{experience.position}</h3>
+            <h3 className="mt-3 text-2xl font-bold text-(--text)">{experience.position}</h3>
 
-            <p className="mt-2 text-blue-300">{experience.company}</p>
+            <p className="mt-2 text-(--primary)">{experience.company}</p>
 
-            <p className="text-sm text-slate-400">{experience.location}</p>
+            <p className="text-sm text-(--text-secondary)">{experience.location}</p>
           </div>
 
           <span
@@ -39,7 +39,7 @@ export default function TimelineItem({ experience }: Props) {
           </span>
         </div>
 
-        <ul className="mt-6 grid gap-3 text-slate-300">
+        <ul className="mt-6 grid gap-3 text-(--text-secondary)">
           {experience.description.map((item) => (
             <li key={item} className="flex gap-3">
               <span className="mt-2 h-2 w-2 rounded-full bg-blue-400" />
@@ -52,7 +52,7 @@ export default function TimelineItem({ experience }: Props) {
           {experience.technologies.map((tech) => (
             <span
               key={tech}
-              className="rounded-full border border-white/10 bg-slate-950/60 px-3 py-1 text-sm text-slate-200"
+              className="rounded-full border border-(--border) bg-(--surface-soft) px-3 py-1 text-sm text-(--text)"
             >
               {tech}
             </span>

@@ -84,7 +84,7 @@ export default function Portfolio() {
         </FadeIn>
 
         <FadeIn>
-          <div className="mb-10 rounded-3xl border border-white/10 bg-slate-950/50 p-2 backdrop-blur-xl">
+          <div className="mb-10 rounded-3xl border border-(--border) bg-(--surface-strong) p-2 backdrop-blur-xl">
             <div className="grid grid-cols-1 gap-2 sm:grid-cols-3">
               {tabs.map((tab) => {
                 const isActive = activeTab === tab.key;
@@ -96,12 +96,12 @@ export default function Portfolio() {
                     onClick={() => setActiveTab(tab.key)}
                     className={`rounded-2xl px-5 py-4 text-left transition ${
                       isActive
-                        ? "bg-blue-500/20 text-white ring-1 ring-blue-300/40"
-                        : "text-slate-300 hover:bg-white/5 hover:text-white"
+                        ? "bg-blue-500/20 text-(--text) ring-1 ring-blue-300/40"
+                        : "text-(--text-secondary) hover:bg-(--surface-hover) hover:text-(--text)"
                     }`}
                     aria-pressed={isActive}
                   >
-                    <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-400">
+                    <p className="text-sm font-semibold uppercase tracking-[0.2em] text-(--text-secondary)">
                       {tab.count} {tab.countLabel}
                     </p>
 
@@ -152,11 +152,11 @@ export default function Portfolio() {
                 >
                   <GlassCard className="flex h-full flex-col overflow-hidden p-6">
                     <div className="mb-4 flex items-center justify-between gap-3">
-                      <h3 className="text-xl font-semibold text-white">
+                      <h3 className="text-xl font-semibold text-(--text)">
                         {skill.category}
                       </h3>
 
-                      <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs uppercase tracking-[0.3em] text-slate-400">
+                      <span className="rounded-full border border-(--border) bg-(--surface-soft) px-3 py-1 text-xs uppercase tracking-[0.3em] text-(--text-secondary)">
                         {skill.items.length}
                       </span>
                     </div>
@@ -165,7 +165,7 @@ export default function Portfolio() {
                       {skill.items.map((item) => (
                         <span
                           key={item}
-                          className="rounded-full border border-white/10 bg-slate-950/60 px-3 py-2 text-sm text-slate-200"
+                          className="rounded-full border border-(--border) bg-(--surface-soft) px-3 py-2 text-sm text-(--text)"
                         >
                           {item}
                         </span>

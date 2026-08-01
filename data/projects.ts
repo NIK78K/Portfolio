@@ -7,7 +7,7 @@ export const projects: Project[] = [
       "Aplikasi kasir dan transaksi untuk operasional restoran yang cepat dan mudah dipakai.",
     image: "/certificates/anjay.jpg",
     tech: ["Laravel", "MySQL", "Tailwind CSS", "Alpine.js"],
-    github: "https://github.com/NIK78K",
+    github: "https://github.com/NIK78K/Kasir-Sistem",
     demo: "",
   },
   {
@@ -16,7 +16,7 @@ export const projects: Project[] = [
       "Sistem parkir berbasis web untuk pencatatan kendaraan, slot parkir, dan transaksi.",
     image: "/images/rehe.jpg",
     tech: ["React.js", "Laravel", "MySQL"],
-    github: "https://github.com/NIK78K",
+    github: "https://github.com/NIK78K/parking-system",
     demo: "",
   },
   {
@@ -25,7 +25,7 @@ export const projects: Project[] = [
       "Antarmuka desktop untuk eksperimen peramalan deret waktu menggunakan metode SARIMA.",
     image: "/images/projects/restaurant.png",
     tech: ["Python", "MySQL"],
-    github: "https://github.com/NIK78K",
+    github: "https://github.com/NIK78K/sarima-forecasting-gui",
     demo: "",
   },
   {
@@ -34,7 +34,7 @@ export const projects: Project[] = [
       "Dashboard monitoring capaian kinerja pegawai dengan alur input dan rekap yang lebih jelas.",
     image: "/images/projects/restaurant.png",
     tech: ["Laravel", "MySQL", "Node.js"],
-    github: "https://github.com/NIK78K",
+    github: "https://github.com/NIK78K/capkinn",
     demo: "",
   },
 ];

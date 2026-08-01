@@ -9,24 +9,24 @@ export default function Hero() {
       <Container>
         <div className="grid items-center gap-14 lg:grid-cols-[1.15fr_0.85fr] lg:gap-20">
           <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 rounded-full border border-blue-400/20 bg-blue-400/10 px-4 py-2 text-sm text-blue-200">
-              <span className="h-2 w-2 rounded-full bg-blue-400" />
+            <div className="inline-flex items-center gap-2 rounded-full border border-(--border) bg-(--surface-soft) px-4 py-2 text-sm text-(--primary)">
+              <span className="h-2 w-2 rounded-full bg-(--primary)" />
               Open to Work
             </div>
 
-            <p className="mt-6 text-sm uppercase tracking-[0.35em] text-slate-400">
+            <p className="mt-6 text-sm uppercase tracking-[0.35em] text-(--text-secondary)">
               Hello, I&apos;m
             </p>
 
-            <h1 className="mt-3 max-w-xl text-5xl font-extrabold leading-[0.95] md:text-7xl">
+            <h1 className="mt-3 max-w-xl text-5xl font-extrabold leading-[0.95] text-(--text) md:text-7xl">
               {profile.name}
             </h1>
 
-            <h2 className="mt-5 text-2xl text-slate-300 md:text-3xl">
+            <h2 className="mt-5 text-2xl text-(--text-secondary) md:text-3xl">
               {profile.title}
             </h2>
 
-            <p className="mt-6 max-w-xl text-lg leading-8 text-slate-400">
+            <p className="mt-6 max-w-xl text-lg leading-8 text-(--text-secondary)">
               {profile.subtitle}
             </p>
 
@@ -42,7 +42,7 @@ export default function Hero() {
               <a
                 href="/cv/Resume_Alfath Damanik.pdf"
                 download
-                className="inline-flex items-center justify-center rounded-full border border-white/10 px-6 py-3 font-semibold text-slate-100 transition hover:border-blue-400 hover:bg-white/5"
+                className="inline-flex items-center justify-center rounded-full border border-(--border) px-6 py-3 font-semibold text-(--text) transition hover:border-blue-400 hover:bg-(--surface-hover)"
               >
                 Download CV
               </a>
@@ -53,7 +53,7 @@ export default function Hero() {
                 href={profile.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/5 text-xl transition hover:border-blue-400 hover:bg-white/10"
+                className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-(--border) bg-(--surface-soft) text-xl text-(--text) transition hover:border-blue-400 hover:bg-(--surface-hover)"
               >
                 <FaGithub />
               </a>
@@ -62,7 +62,7 @@ export default function Hero() {
                 href={profile.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/5 text-xl transition hover:border-blue-400 hover:bg-white/10"
+                className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-(--border) bg-(--surface-soft) text-xl text-(--text) transition hover:border-blue-400 hover:bg-(--surface-hover)"
               >
                 <FaLinkedin />
               </a>
@@ -72,7 +72,7 @@ export default function Hero() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Email"
-                className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/5 text-xl transition hover:border-blue-400 hover:bg-white/10"
+                className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-(--border) bg-(--surface-soft) text-xl text-(--text) transition hover:border-blue-400 hover:bg-(--surface-hover)"
               >
                 <FaEnvelope />
               </a>
@@ -81,9 +81,9 @@ export default function Hero() {
 
           <div className="flex justify-center lg:justify-end">
             <div className="max-w-2xl mt-8">
-              <div className="pointer-events-none absolute inset-0 rounded-[2rem] bg-gradient-to-br from-blue-500/30 via-cyan-400/10 to-transparent blur-3xl" />
+              <div className="pointer-events-none absolute inset-0 rounded-4xl bg-linear-to-br from-blue-500/20 via-cyan-400/10 to-transparent blur-3xl" />
 
-              <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 p-4 shadow-[0_24px_100px_rgba(2,6,23,0.35)] backdrop-blur-xl">
+              <div className="relative overflow-hidden rounded-4xl border border-(--border) bg-(--surface) p-4 shadow-[0_24px_100px_rgba(2,6,23,0.18)] backdrop-blur-xl">
                 <Image
                   src="/images/Photo.jpeg"
                   alt={profile.name}
@@ -91,23 +91,23 @@ export default function Hero() {
                   height={580}
                   priority
                   sizes="(max-width: 1024px) 100vw, 40vw"
-                  className="h-[430px] w-full rounded-[1.5rem] object-cover object-top"
+                  className="h-107.5 w-full rounded-3xl object-cover object-top"
                 />
 
                 <div className="mt-4 grid grid-cols-3 gap-3 text-center text-sm">
-                  <div className="rounded-2xl border border-white/10 bg-slate-950/70 px-3 py-4">
-                    <p className="text-lg font-bold text-white">S1</p>
-                    <p className="text-slate-400">S.Kom</p>
+                  <div className="rounded-2xl border border-(--border) bg-(--surface-strong) px-3 py-4">
+                    <p className="text-lg font-bold text-(--text)">S1</p>
+                    <p className="text-(--text-secondary)">S.Kom</p>
                   </div>
 
-                  <div className="rounded-2xl border border-white/10 bg-slate-950/70 px-3 py-4">
-                    <p className="text-lg font-bold text-white">3.74</p>
-                    <p className="text-slate-400">GPA</p>
+                  <div className="rounded-2xl border border-(--border) bg-(--surface-strong) px-3 py-4">
+                    <p className="text-lg font-bold text-(--text)">3.74</p>
+                    <p className="text-(--text-secondary)">GPA</p>
                   </div>
 
-                  <div className="rounded-2xl border border-white/10 bg-slate-950/70 px-3 py-4">
-                    <p className="text-lg font-bold text-white">5+</p>
-                    <p className="text-slate-400">Project</p>
+                  <div className="rounded-2xl border border-(--border) bg-(--surface-strong) px-3 py-4">
+                    <p className="text-lg font-bold text-(--text)">5+</p>
+                    <p className="text-(--text-secondary)">Project</p>
                   </div>
                 </div>
               </div>

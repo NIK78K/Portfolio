@@ -26,7 +26,7 @@ export default function Contact() {
           <GlassCard>
             <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
               <div>
-                <p className="text-lg leading-8 text-slate-300">
+                <p className="text-lg leading-8 text-(--text-secondary)">
                   I’m open to job opportunities, collaborations, and digital product development
                 </p>
 
@@ -43,7 +43,7 @@ export default function Contact() {
 
                   <a
                     href="#portfolio"
-                    className="inline-flex items-center justify-center gap-2 rounded-full border border-white/10 px-6 py-3 font-semibold text-slate-100 transition hover:border-blue-400 hover:bg-white/5"
+                    className="inline-flex items-center justify-center gap-2 rounded-full border border-(--border) px-6 py-3 font-semibold text-(--text) transition hover:border-blue-400 hover:bg-(--surface-hover)"
                   >
                     View Work
                     <FaArrowRight size={14} />
@@ -56,15 +56,15 @@ export default function Contact() {
                   href={`https://mail.google.com/mail/?view=cm&fs=1&to=${profile.email}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-between rounded-2xl border border-white/10 bg-slate-950/60 px-5 py-4 transition hover:border-blue-400/50 hover:bg-white/5"
+                  className="flex items-center justify-between rounded-2xl border border-(--border) bg-(--surface-soft) px-5 py-4 transition hover:border-blue-400/50 hover:bg-(--surface-hover)"
                 >
                   <div className="flex items-center gap-4">
-                    <span className="flex h-11 w-11 items-center justify-center rounded-full bg-blue-500/10 text-blue-300">
+                    <span className="flex h-11 w-11 items-center justify-center rounded-full bg-blue-500/10 text-(--primary)">
                       <FaEnvelope />
                     </span>
                     <div>
-                      <p className="font-medium text-white">Email</p>
-                      <p className="text-sm text-slate-400">{profile.email}</p>
+                      <p className="font-medium text-(--text)">Email</p>
+                      <p className="text-sm text-(--text-secondary)">{profile.email}</p>
                     </div>
                   </div>
                 </a>
@@ -73,15 +73,15 @@ export default function Contact() {
                   href={profile.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-between rounded-2xl border border-white/10 bg-slate-950/60 px-5 py-4 transition hover:border-blue-400/50 hover:bg-white/5"
+                  className="flex items-center justify-between rounded-2xl border border-(--border) bg-(--surface-soft) px-5 py-4 transition hover:border-blue-400/50 hover:bg-(--surface-hover)"
                 >
                   <div className="flex items-center gap-4">
-                    <span className="flex h-11 w-11 items-center justify-center rounded-full bg-blue-500/10 text-blue-300">
+                    <span className="flex h-11 w-11 items-center justify-center rounded-full bg-blue-500/10 text-(--primary)">
                       <FaGithub />
                     </span>
                     <div>
-                      <p className="font-medium text-white">GitHub</p>
-                      <p className="text-sm text-slate-400">NIK78K</p>
+                      <p className="font-medium text-(--text)">GitHub</p>
+                      <p className="text-sm text-(--text-secondary)">NIK78K</p>
                     </div>
                   </div>
                 </a>
@@ -90,15 +90,15 @@ export default function Contact() {
                   href={profile.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-between rounded-2xl border border-white/10 bg-slate-950/60 px-5 py-4 transition hover:border-blue-400/50 hover:bg-white/5"
+                  className="flex items-center justify-between rounded-2xl border border-(--border) bg-(--surface-soft) px-5 py-4 transition hover:border-blue-400/50 hover:bg-(--surface-hover)"
                 >
                   <div className="flex items-center gap-4">
-                    <span className="flex h-11 w-11 items-center justify-center rounded-full bg-blue-500/10 text-blue-300">
+                    <span className="flex h-11 w-11 items-center justify-center rounded-full bg-blue-500/10 text-(--primary)">
                       <FaLinkedin />
                     </span>
                     <div>
-                      <p className="font-medium text-white">LinkedIn</p>
-                      <p className="text-sm text-slate-400">Alfath Damanik</p>
+                      <p className="font-medium text-(--text)">LinkedIn</p>
+                      <p className="text-sm text-(--text-secondary)">Alfath Damanik</p>
                     </div>
                   </div>
                 </a>
