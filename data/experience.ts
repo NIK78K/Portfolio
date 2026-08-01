@@ -33,11 +33,9 @@ export const experiences: Experience[] = [
     location: "Pekanbaru, Indonesia",
 
     description: [
-      "Supported the development and maintenance of internal organizational systems.",
-      "Assisted in managing technical needs and digital resources for organizational activities.",
-      "Collaborated with team members to identify and solve technical issues.",
-      "Created and maintained documentation for IT-related activities and projects.",
-      "Contributed to the planning and implementation of technology-based solutions for organizational needs."
+      "Executed Rumpi IT 2023, a national seminar featuring PT PLN, focusing on the integration of computer science in Society 5.0.",
+      "Facilitated Kelas Prestasi and served as Head of Committee for SKMN, promoting national competition opportunities and supporting student academic achievements.",
+      "Built a student achievement database for the Computer Science department to support university accreditation requirements.",
     ],
 
     technologies: [
