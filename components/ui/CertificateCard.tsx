@@ -8,18 +8,18 @@ type Props = {
 
 export default function CertificateCard({ certificate }: Props) {
   return (
-    <GlassCard>
+    <GlassCard className="flex h-full min-h-124 flex-col">
       <div className="overflow-hidden rounded-2xl border border-white/10">
         <Image
           src={certificate.image}
           alt={certificate.title}
           width={600}
           height={420}
-          className="aspect-[4/3] w-full object-cover"
+          className="aspect-4/3 w-full object-cover"
         />
       </div>
 
-      <div className="mt-5">
+      <div className="mt-5 flex-1">
         <h3 className="text-lg font-semibold leading-7 text-white">
           {certificate.title}
         </h3>

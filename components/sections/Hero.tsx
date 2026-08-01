@@ -52,7 +52,7 @@ export default function Hero() {
               <a
                 href={profile.github}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/5 text-xl transition hover:border-blue-400 hover:bg-white/10"
               >
                 <FaGithub />
@@ -61,14 +61,17 @@ export default function Hero() {
               <a
                 href={profile.linkedin}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/5 text-xl transition hover:border-blue-400 hover:bg-white/10"
               >
                 <FaLinkedin />
               </a>
 
               <a
-                href={`mailto:${profile.email}`}
+                href={`https://mail.google.com/mail/?view=cm&fs=1&to=${profile.email}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Email"
                 className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/5 text-xl transition hover:border-blue-400 hover:bg-white/10"
               >
                 <FaEnvelope />

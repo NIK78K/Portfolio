@@ -22,10 +22,13 @@ export const skills: Skill[] = [
     ],
   },
   {
-    category: "Database",
+    category: "System Analysis",
     items: [
-      "MySQL",
-      "SQLite",
+      "Requirements Analysis",
+      "Business Process Analysis",
+      "System Design",
+      "Documentation",
+      "UML",
     ],
   },
   {
@@ -34,8 +37,15 @@ export const skills: Skill[] = [
       "Python",
       "Pandas",
       "NumPy",
-      "SARIMA",
+      "SARIMAX",
       "Time Series Forecasting",
+    ],
+  },
+  {
+    category: "Database",
+    items: [
+      "MySQL",
+      "SQLite",
     ],
   },
   {
@@ -46,6 +56,9 @@ export const skills: Skill[] = [
       "Postman",
       "VS Code",
       "Laragon",
+      "Visual Paradigm",
+      "Draw.io",
+      "Google Colab",
     ],
   },
 ];

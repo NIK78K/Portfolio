@@ -29,23 +29,23 @@ export const experiences: Experience[] = [
     type: "Organization",
     company: "Himpunan Mahasiswa Ilmu Komputer",
     position: "Staff Biro IT",
-    duration: "Feb 2025 - Jun 2025",
+    duration: "Jun 2023 - Dec 2023",
     location: "Pekanbaru, Indonesia",
 
     description: [
-      "Developed an employee performance monitoring system.",
-      "Built responsive user interfaces using Laravel.",
-      "Designed and managed MySQL database.",
-      "Implemented authentication and CRUD features.",
-      "Created technical documentation."
+      "Supported the development and maintenance of internal organizational systems.",
+      "Assisted in managing technical needs and digital resources for organizational activities.",
+      "Collaborated with team members to identify and solve technical issues.",
+      "Created and maintained documentation for IT-related activities and projects.",
+      "Contributed to the planning and implementation of technology-based solutions for organizational needs."
     ],
 
     technologies: [
-      "Laravel",
-      "PHP",
-      "JavaScript",
-      "MySQL",
-      "Git"
+      "Teamwork",
+      "Communication",
+      "Problem Solving",
+      "Collaboration",
+      "Time Management"
     ]
   }
 ];

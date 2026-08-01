@@ -32,7 +32,9 @@ export default function Contact() {
 
                 <div className="mt-8 flex flex-col gap-4 sm:flex-row">
                   <a
-                    href={`mailto:${profile.email}`}
+                    href={`https://mail.google.com/mail/?view=cm&fs=1&to=${profile.email}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center justify-center gap-2 rounded-full bg-blue-500 px-6 py-3 font-semibold text-white transition hover:bg-blue-400"
                   >
                     <FaEnvelope />
@@ -40,7 +42,7 @@ export default function Contact() {
                   </a>
 
                   <a
-                    href="#projects"
+                    href="#portfolio"
                     className="inline-flex items-center justify-center gap-2 rounded-full border border-white/10 px-6 py-3 font-semibold text-slate-100 transition hover:border-blue-400 hover:bg-white/5"
                   >
                     View Work
@@ -51,7 +53,9 @@ export default function Contact() {
 
               <div className="space-y-4">
                 <a
-                  href={`mailto:${profile.email}`}
+                  href={`https://mail.google.com/mail/?view=cm&fs=1&to=${profile.email}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center justify-between rounded-2xl border border-white/10 bg-slate-950/60 px-5 py-4 transition hover:border-blue-400/50 hover:bg-white/5"
                 >
                   <div className="flex items-center gap-4">
@@ -68,7 +72,7 @@ export default function Contact() {
                 <a
                   href={profile.github}
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className="flex items-center justify-between rounded-2xl border border-white/10 bg-slate-950/60 px-5 py-4 transition hover:border-blue-400/50 hover:bg-white/5"
                 >
                   <div className="flex items-center gap-4">
@@ -85,7 +89,7 @@ export default function Contact() {
                 <a
                   href={profile.linkedin}
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className="flex items-center justify-between rounded-2xl border border-white/10 bg-slate-950/60 px-5 py-4 transition hover:border-blue-400/50 hover:bg-white/5"
                 >
                   <div className="flex items-center gap-4">
