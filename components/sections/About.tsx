@@ -12,7 +12,7 @@ export default function About() {
           <SectionTitle
             eyebrow="About"
             title="About Me"
-            subtitle="I build clean, responsive web experiences and enjoy turning ideas into structured, usable products."
+            subtitle="Turning ideas into thoughtful, practical, and user-focused digital solutions."
           />
         </FadeIn>
 

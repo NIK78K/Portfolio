@@ -79,7 +79,7 @@ export default function Portfolio() {
           <SectionTitle
             eyebrow="Portfolio"
             title="Portfolio Showcase"
-            subtitle="Explore projects, certifications, and technical expertise in one place."
+            subtitle="Projects, certifications, and skills that showcase my experience."
           />
         </FadeIn>
 
