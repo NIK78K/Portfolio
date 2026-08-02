@@ -1,34 +1,26 @@
 import Container from "@/components/ui/Container";
 import { profile } from "@/data/profile";
 
-const footerLinks = ["about", "experience", "projects", "skills", "contact"];
-
 export default function Footer() {
-	return (
-		<footer className="border-t border-(--border) py-10">
-			<Container>
-				<div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
-					<div>
-						<p className="text-lg font-semibold text-(--text)">{profile.name}</p>
-						<p className="mt-2 max-w-md text-sm text-(--text-secondary)">
-							Portfolio web yang dirapikan dengan fokus pada struktur, visual hierarki,
-							dan pengalaman baca yang lebih tenang.
-						</p>
-					</div>
+  return (
+    <footer className="border-t border-(--border) py-10">
+      <Container>
+        <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+          <div>
+            <p className="text-lg font-semibold text-(--text)">
+              {profile.name}
+            </p>
 
-					<div className="flex flex-wrap gap-3">
-						{footerLinks.map((link) => (
-							<a
-								key={link}
-								href={`#${link}`}
-								className="rounded-full border border-(--border) px-4 py-2 text-sm text-(--text-secondary) transition hover:border-blue-400 hover:text-(--text)"
-							>
-								{link}
-							</a>
-						))}
-					</div>
-				</div>
-			</Container>
-		</footer>
-	);
+            <p className="mt-2 max-w-md text-sm text-(--text-secondary)">
+              System Analyst | Full Stack Web Developer
+            </p>
+          </div>
+
+          <p className="text-sm text-(--text-secondary)">
+            © 2026 {profile.name}. All rights reserved.
+          </p>
+        </div>
+      </Container>
+    </footer>
+  );
 }

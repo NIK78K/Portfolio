@@ -20,7 +20,7 @@ export default function Navbar() {
       <div className="mx-auto max-w-7xl rounded-3xl border border-[color:var(--border)] bg-[color:var(--surface-strong)] px-4 backdrop-blur-xl md:px-6">
         <div className="flex h-16 items-center justify-between">
           <h1 className="text-xl font-bold tracking-tight text-(--text)">
-            Alfath<span className="text-(--primary)">.</span>
+            PORTFOLIO<span className="text-(--primary)">.</span>
           </h1>
 
           <nav className="hidden items-center gap-2 md:flex">
