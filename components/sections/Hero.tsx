@@ -97,10 +97,6 @@ export default function Hero() {
                   className="h-107.5 w-full rounded-3xl object-cover object-top grayscale-15"
                 />
 
-                <div className="absolute top-7 left-7 rounded-full border border-white/20 bg-slate-950/60 px-3 py-1 text-xs font-semibold uppercase tracking-[0.22em] text-white backdrop-blur-md">
-                  Alfath / 2026
-                </div>
-
                 <div className="mt-4 grid grid-cols-3 gap-3 text-center text-sm">
                   <div className="rounded-2xl border border-(--border) bg-(--surface-strong) px-3 py-4">
                     <p className="text-lg font-bold text-(--text)">S1</p>

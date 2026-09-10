@@ -20,7 +20,7 @@ export default function Navbar() {
       <div className="mx-auto max-w-7xl rounded-3xl border border-(--border) bg-(--surface-strong) px-4 shadow-[0_18px_60px_rgba(2,9,12,0.18)] backdrop-blur-xl md:px-6">
         <div className="flex h-16 items-center justify-between">
           <h1 className="text-xl font-bold tracking-tight text-(--text)">
-            AD<span className="text-(--primary)">.</span>
+            Alfath Damanik<span className="text-(--primary)">.</span>
           </h1>
 
           <nav className="hidden items-center gap-2 md:flex">
