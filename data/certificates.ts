@@ -12,7 +12,7 @@ export const certificates: Certificate[] = [
     title: "Digitalent Kominfo Java Fundamentals & Java Programming 2023",
     issuer: "Kementerian Komunikasi dan Informatika (KOMINFO)",
     issueDate: "August 2023",
-    image: "/certificates/kominfo.jpg",
+    image: "/certificates/Kominfo.jpg",
   },
 
   {
