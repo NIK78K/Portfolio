@@ -56,4 +56,11 @@ export const certificates: Certificate[] = [
     issueDate: "March 2025",
     image: "/certificates/Magang.jpeg",
   },
+
+    {
+    title: "IT Systems Design and Analysis",
+    issuer: "Coursera",
+    issueDate: "August 2026",
+    image: "/certificates/Coursera.jpg",
+  },
 ];

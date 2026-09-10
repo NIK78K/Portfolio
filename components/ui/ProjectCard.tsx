@@ -8,7 +8,7 @@ type ProjectCardProps = {
 
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <article className="group overflow-hidden rounded-3xl border border-(--border) bg-(--surface) shadow-(--shadow-card) backdrop-blur-xl transition duration-300 hover:-translate-y-2 hover:border-blue-400/40 hover:bg-(--surface-hover) hover:shadow-(--shadow-card-hover)">
+    <article className="group flex h-full flex-col overflow-hidden rounded-3xl border border-(--border) bg-(--surface) shadow-(--shadow-card) backdrop-blur-xl transition duration-300 hover:-translate-y-2 hover:border-blue-400/40 hover:bg-(--surface-hover) hover:shadow-(--shadow-card-hover)">
       <div className="relative aspect-2/1 bg-(--surface-strong)">
         <Image
           src={project.image}
@@ -21,7 +21,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         <div className="absolute inset-0 bg-linear-to-t from-[rgba(7,17,31,0.9)] via-[rgba(7,17,31,0.05)] to-transparent" />
       </div>
 
-      <div className="space-y-4 p-5">
+      <div className="flex flex-1 flex-col space-y-4 p-5">
         <div>
           <h3 className="text-2xl font-bold text-(--text)">{project.title}</h3>
 
@@ -41,7 +41,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           ))}
         </div>
 
-        <div className="flex flex-wrap gap-4 pt-2 text-sm font-medium">
+        <div className="mt-auto flex flex-wrap gap-4 pt-2 text-sm font-medium">
           {project.github && (
             <a
               href={project.github}

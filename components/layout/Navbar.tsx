@@ -17,10 +17,10 @@ export default function Navbar() {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 px-4 pt-4">
-      <div className="mx-auto max-w-7xl rounded-3xl border border-[color:var(--border)] bg-[color:var(--surface-strong)] px-4 backdrop-blur-xl md:px-6">
+      <div className="mx-auto max-w-7xl rounded-3xl border border-(--border) bg-(--surface-strong) px-4 shadow-[0_18px_60px_rgba(2,9,12,0.18)] backdrop-blur-xl md:px-6">
         <div className="flex h-16 items-center justify-between">
           <h1 className="text-xl font-bold tracking-tight text-(--text)">
-            PORTFOLIO<span className="text-(--primary)">.</span>
+            AD<span className="text-(--primary)">.</span>
           </h1>
 
           <nav className="hidden items-center gap-2 md:flex">
@@ -28,7 +28,7 @@ export default function Navbar() {
               <a
                 key={menu}
                 href={`#${menu.toLowerCase()}`}
-                className="rounded-full px-4 py-2 text-sm text-(--text-secondary) transition hover:bg-[color:var(--surface-hover)] hover:text-(--text)"
+                className="rounded-full px-4 py-2 text-sm text-(--text-secondary) transition hover:bg-(--surface-hover) hover:text-(--primary)"
               >
                 {menu}
               </a>

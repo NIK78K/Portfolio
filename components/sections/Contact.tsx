@@ -35,7 +35,7 @@ export default function Contact() {
                     href={`https://mail.google.com/mail/?view=cm&fs=1&to=${profile.email}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-2 rounded-full bg-blue-500 px-6 py-3 font-semibold text-white transition hover:bg-blue-400"
+                    className="inline-flex items-center justify-center gap-2 rounded-full bg-(--primary) px-6 py-3 font-semibold text-slate-950 transition hover:bg-(--primary-hover)"
                   >
                     <FaEnvelope />
                     Email Me

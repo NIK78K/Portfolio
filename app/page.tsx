@@ -9,7 +9,7 @@ import Footer from "@/components/layout/Footer";
 export default function Home() {
   return (
     <div className="relative">
-      <div className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[42rem] bg-[radial-gradient(circle_at_top,rgba(59,130,246,0.16),transparent_55%)]" />
+      <div className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[42rem] bg-[radial-gradient(circle_at_top,rgba(199,243,107,0.1),transparent_55%)]" />
 
       <Navbar />
 

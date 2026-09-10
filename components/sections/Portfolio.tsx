@@ -96,7 +96,7 @@ export default function Portfolio() {
                     onClick={() => setActiveTab(tab.key)}
                     className={`rounded-2xl px-5 py-4 text-left transition ${
                       isActive
-                        ? "bg-blue-500/20 text-(--text) ring-1 ring-blue-300/40"
+                        ? "bg-(--primary)/15 text-(--text) ring-1 ring-(--primary)/40"
                         : "text-(--text-secondary) hover:bg-(--surface-hover) hover:text-(--text)"
                     }`}
                     aria-pressed={isActive}
@@ -116,7 +116,7 @@ export default function Portfolio() {
         </FadeIn>
 
         {activeTab === "projects" && (
-          <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-2">
+          <div className="grid auto-rows-fr items-stretch gap-8 md:grid-cols-2 xl:grid-cols-2">
             {projects.map((project) => (
               <FadeIn key={project.title}>
                 <ProjectCard project={project} />

@@ -8,7 +8,7 @@ export const profile = {
 
   github: "https://github.com/NIK78K",
 
-  linkedin: "https://www.linkedin.com/in/alfath-damanik-0a9069421",
+  linkedin: "https://www.linkedin.com/in/alfathdamanik",
 
   email: "alfathdamanik@gmail.com",
 };

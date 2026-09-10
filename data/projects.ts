@@ -34,7 +34,14 @@ export const projects: Project[] = [
       "Web-based system for monitoring and summarizing BPS employees' performance achievements.",
     image: "/projects/ss bps.jpeg",
     tech: ["Laravel", "MySQL", "Node.js", "Tailwind CSS"],
-    github: "https://github.com/NIK78K/capkinn",
+    demo: "",
+  },
+    {
+    title: "Inventory Management Toko Retail Sahabat Jaya Plastik",
+    description:
+        "Built a web-based system for inventory, wholesale and retail sales, purchasing, and returns, with analytics dashboards, automated documents, RBAC, and audit logs.",
+    image: "/projects/inventory.jpg",
+    tech: ["Next.js", "MySQL", "Prisma", "Tailwind CSS"],
     demo: "",
   },
 ];
