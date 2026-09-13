@@ -20,7 +20,7 @@ export default function About() {
             <GlassCard>
               <div className="space-y-5 text-(--text-secondary)">
                 <p className="space-y-5 text-lg leading-8 text-(--text-secondary)">
-                  Hello! I&apos;m Alfath Damanik, a Computer Science graduate passionate about System Analysis and Web Development. I enjoy analyzing business processes, identifying user needs, and designing technology-driven solutions that improve efficiency and user experience.
+                  Hello! I&apos;m Alfath Damanik, a Information Systems graduate passionate about System Analysis and Web Development. I enjoy analyzing business processes, identifying user needs, and designing technology-driven solutions that improve efficiency and user experience.
                   My experience includes developing web applications, designing databases, documenting system requirements, and collaborating in software development projects. I believe that technology is not only about writing code but also about understanding problems and delivering meaningful solutions.
                 </p>
               </div>
